@@ -8,11 +8,11 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <th>Category Name</th>
+        <th>Tag Name</th>
     </tr>
     </thead>
-    <tr th:each="category : ${categories}">
-        <td><a th:text="${category.name}" th:href="'/events?categoryID=' + ${category.id}"></a></td>
+    <tr th:each="tag : ${tags}">
+        <td><a th:text="${tag.name}" th:href="'/events?categoryID=' + ${tag.id}"></a></td>
     </tr>
 
 </table>
